@@ -137,14 +137,14 @@ function Millones(num) {
     return strMillones + " " + strMiles;
 }
 
-function NumeroALetras(num) {
+function DineroALetras(num) {
     var data = {
         numero: num,
         enteros: Math.floor(num),
         centavos: (((Math.round(num * 100)) - (Math.floor(num) * 100))),
         letrasCentavos: "",
-        letrasMonedaPlural: 'PESOS',//“PESOS”, 'Dólares', 'Bolívares', 'etcs'
-        letrasMonedaSingular: 'PESO', //“PESO”, 'Dólar', 'Bolivar', 'etc'
+        letrasMonedaPlural: 'PESOS',
+        letrasMonedaSingular: 'PESO', 
 
         letrasMonedaCentavoPlural: "CENTAVOS",
         letrasMonedaCentavoSingular: "CENTAVO"
@@ -166,4 +166,10 @@ function NumeroALetras(num) {
     else
         return Millones(data.enteros) + " " + data.letrasMonedaPlural + " " + data.letrasCentavos;
 }
-console.log(NumeroALetras("226"))
+
+module.exports={
+    DineroALetras
+}
+
+
+
