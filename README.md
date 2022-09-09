@@ -1,6 +1,6 @@
-# Numeros a letras
+# Dinero a letras
 
-Desarrollado en NodeJS para transformar numeros a palabras
+Desarrollado en NodeJS para transformar dinero a palabras
 
 ## Uso
 
