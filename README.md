@@ -5,10 +5,10 @@ Desarrollado en NodeJS para transformar dinero a palabras
 ## Uso
 
 ```javascript
-//1-instalar packete
+//1-instalar package
 npm i dinero-a-letras
 
-//2.Importar packete
+//2.Importar package
 const {DineroALetras} = require('dinero-a-letras');
 
 //3.Ejemplo de uso
