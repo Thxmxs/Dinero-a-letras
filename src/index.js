@@ -1,19 +1,7 @@
-function Unidades(num){
-    switch(num)
-    {
-        case 1: return  "UN";
-        case 2: return  "DOS";
-        case 3: return  "TRES";
-        case 4: return  "CUATRO";
-        case 5: return  "CINCO";
-        case 6: return  "SEIS";
-        case 7: return  "SIETE";
-        case 8: return  "OCHO";
-        case 9: return  "NUEVE";
-
-    }
-
-    return "";
+function Unidades(num) {
+  const units = ['UN', 'DOS', 'TRES', 'CUATRO', 'CINCO', 'SEIS', 'SIETE', 'OCHO', 'NUEVE']
+  if (!num || num == 0) return ''
+  if (num > 1 || num < 9 ) return units[num - 1]
 }
 
 function Decenas(num){
