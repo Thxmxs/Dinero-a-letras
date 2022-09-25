@@ -159,7 +159,7 @@ function DineroALetras(num) {
             })();
     };
 
-    if(data.enteros == 0)
+    if(data.enteros == 0 || !data.enteros)
         return "CERO " + data.letrasMonedaPlural + " "  + data.letrasCentavos;
     if (data.enteros == 1)
         return Millones(data.enteros) + " " + data.letrasMonedaSingular + " " + data.letrasCentavos;
